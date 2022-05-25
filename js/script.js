@@ -43,7 +43,10 @@ const myApp = new Vue ({
             if (this.activeSlides < 0) {
                 this.activeSlides = this.slides.length - 1;
             }
-    }
+        },
+        selectSlides(i){
+            this.activeSlides = i;
+        },
   }
 });
 
